@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Tailwind CSS</title>
+  <style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+  </style>
+</head>
+
+  <body class="bg-gray-300">
+    
+    <header class="text-gray-700 body-font">
+      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <a class="flex order-first lg:order-none md:w-1/3 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
+          <img class="h-30 mb-2 mx-auto" src="img/crystalnotebook.svg" alt="Crystal Notebook">
+        </a>
+        <nav class="flex lg:w-1/3 flex-wrap items-center text-base md:ml-auto">
+          <a class="mr-5 hover:text-gray-900">First Link</a>
+          <a class="mr-5 hover:text-gray-900">Second Link</a>
+          <a class="mr-5 hover:text-gray-900">Third Link</a>
+        </nav>
+        <div class="lg:w-1/3 inline-flex lg:justify-end ml-5 lg:ml-0">
+          <button class="modal-open inline-flex items-center btn btn-indigo rounded text-base mt-4 mb-4 lg:mt-6 sm:text-base shadow-lg">Sign Up
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+      <section class="flex bg-gray-100">
+        <div class="container px-8 py-8 mx-auto lg:w-1/2 lg:py-16 lg:px-12">
+          <div class="lg:max-w-xl lg:ml-auto lg:px-4">
+            <img class="mx-auto rounded-md shadow-md sm:h-64 sm:w-full sm:object-cover lg:hidden" src="https://images.unsplash.com/photo-1548357194-9e1aace4e94d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=996&q=80" alt="Amethyst" >
+            <h1 class="mt-6 lg:mt-2 text-2xl text-gray-800 font-bold leading-tight sm:text-4xl ">Healing Crystals & Meanings<br><span class="text-indigo-600 font-semibold">Amethyst</span></h1>
+            <p class="mt-2 text-gray-700 leading-tight sm:text-xl lg:mt-4">Amethyst is the stone of spirituality and contentment, it bestows stability, strength, inner peace. It is a great stone for meditation and enhancing your intuition and psychic abilities with its calming and peaceful energy. Amethyst provides clarity and enhances conscious perception and understanding.</p>
+            <div class="mt-4 mb-4 lg:mt-6">
+              <a href="#" class="btn btn-indigo sm:text-base shadow-lg">Learn More</a>
+              <a href="#" class="btn btn-gray sm:text-base ml-4">Shop Now</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="hidden lg:block lg:w-1/2 lg:relative">
+          <img class="absolute inset-0 h-full w-full object-cover object-center" src="https://images.unsplash.com/photo-1548357194-9e1aace4e94d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=996&q=80" alt="Amethyst" >
+        </div>
+
+      </section>
+
+    <div class="container px-8 py-5 mx-auto">
+      <div class="flex flex-col text-center w-full lg:mt-5 lg:mb-5 mt-2">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Master Cleanse Reliac Heirloom</h1>
+        <div class="h-1 w-20 bg-indigo-500 rounded mx-auto mb-4"></div>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.</p>
+      </div>
+    </div>
+
+    <section class="text-gray-700 body-font">
+      <div class="container px-8 py-5 mx-auto">
+        <div class="flex flex-wrap -m-4">
+          <div class="p-4 md:w-1/3">
+            <div class="h-full rounded-md shadow-md bg-gray-100 overflow-hidden">
+              <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://images.unsplash.com/photo-1567113463224-37cf03ba4577?ixlib=rb-1.2.1&auto=format&fit=crop&w=1033&q=80" alt="blog">
+              <div class="p-6">
+                <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">CRYSTALS</h2>
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Starting Your Collection of Gemstones</h1>
+                <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+                <div class="flex items-center flex-wrap ">
+                  <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 12h14"></path>
+                      <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                  <span class="text-gray-600 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-300">
+                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                      <circle cx="12" cy="12" r="3"></circle>
+                    </svg>1.2K
+                  </span>
+                  <span class="text-gray-600 inline-flex items-center leading-none text-sm">
+                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                    </svg>6
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/3">
+            <div class="h-full  rounded-md shadow-md bg-gray-100  overflow-hidden">
+              <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://images.unsplash.com/photo-1565492206137-0797f1ca6dc6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="blog">
+              <div class="p-6">
+                <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">TAROT</h2>
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The Secret Meanings of Tarot Cards</h1>
+                <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+                <div class="flex items-center flex-wrap">
+                  <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 12h14"></path>
+                      <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                  <span class="text-gray-600 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-300">
+                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                      <circle cx="12" cy="12" r="3"></circle>
+                    </svg>1.2K
+                  </span>
+                  <span class="text-gray-600 inline-flex items-center leading-none text-sm">
+                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                    </svg>6
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/3">
+            <div class="h-full rounded-md shadow-md bg-gray-100 overflow-hidden">
+              <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://images.unsplash.com/photo-1591228128578-a2723fa3ed9c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="blog">
+              <div class="p-6">
+                <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">HOLISTIC</h2>
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Top 5 Essential Oils for the Soul</h1>
+                <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+                <div class="flex items-center flex-wrap ">
+                  <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 12h14"></path>
+                      <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                  <span class="text-gray-600 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-300">
+                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                      <circle cx="12" cy="12" r="3"></circle>
+                    </svg>1.2K
+                  </span>
+                  <span class="text-gray-600 inline-flex items-center leading-none text-sm">
+                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                    </svg>6
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+      <main class="my-5">
+        <div class="container mx-auto px-8">
+            <h3 class="text-gray-700 text-2xl font-medium">View All Crystals</h3>
+            <span class="mt-3 text-sm text-gray-500">200+ Products</span>
+            <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-6">
+                <div class="w-full max-w-lg mx-auto rounded-md shadow-md overflow-hidden">
+                    <div class="flex items-end justify-end h-56 w-full bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1597177586824-33bda0c29325?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80')">
+                        <button class="p-2 rounded-full bg-indigo-600 text-white mx-5 -mb-4 hover:bg-pink-300 focus:outline-none focus:bg-indigo-300">
+                            <svg class="h-5 w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path></svg>
+                        </button>
+                    </div>
+                    <div class="px-5 py-3 bg-gray-100">
+                        <h3 class="text-gray-700 uppercase">Amethyst Gemstones</h3>
+                        <span class="text-gray-500 mt-2">$2 / each</span>
+                    </div>
+                </div>
+                <div class="w-full max-w-lg mx-auto rounded-md shadow-md overflow-hidden">
+                    <div class="flex items-end justify-end h-56 w-full bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1586658066617-501acf76eafc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80')">
+                        <button class="p-2 rounded-full bg-indigo-600 text-white mx-5 -mb-4 hover:bg-pink-300 focus:outline-none focus:bg-indigo-300">
+                            <svg class="h-5 w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path></svg>
+                        </button>
+                    </div>
+                    <div class="px-5 py-3 bg-gray-100">
+                        <h3 class="text-gray-700 uppercase">Amethyst Points & Pyrite</h3>
+                        <span class="text-gray-500 mt-2">$15 / each</span>
+                    </div>
+                </div>
+                <div class="w-full max-w-lg mx-auto rounded-md shadow-md overflow-hidden">
+                    <div class="flex items-end justify-end h-56 w-full bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1593259213062-57b0ce5906cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80')">
+                        <button class="p-2 rounded-full bg-indigo-600 text-white mx-5 -mb-4 hover:bg-blue-500 focus:outline-none focus:bg-indigo-300">
+                            <svg class="h-5 w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path></svg>
+                        </button>
+                    </div>
+                    <div class="px-5 py-3 bg-gray-100">
+                        <h3 class="text-gray-700 uppercase">Rose Quartz Chunk</h3>
+                        <span class="text-gray-500 mt-2">$10 / each</span>
+                    </div>
+                </div>
+                <div class="w-full max-w-lg mx-auto rounded-md shadow-md overflow-hidden">
+                    <div class="flex items-end justify-end h-56 w-full bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1562162115-54cc44600875?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80')">
+                        <button class="p-2 rounded-full bg-indigo-600 text-white mx-5 -mb-4 hover:bg-blue-500 focus:outline-none focus:bg-indigo-300">
+                            <svg class="h-5 w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path></svg>
+                        </button>
+                    </div>
+                    <div class="px-5 py-3 bg-gray-100">
+                        <h3 class="text-gray-700 uppercase">Clear Quartz Cluster</h3>
+                        <span class="text-gray-500 mt-2">$35 / each</span>
+                    </div>
+                </div>
+                <div class="w-full max-w-lg mx-auto rounded-md shadow-md overflow-hidden">
+                    <div class="flex items-end justify-end h-56 w-full bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1584714553121-fd26575f4e07?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=774&q=80')">
+                        <button class="p-2 rounded-full bg-indigo-600 text-white mx-5 -mb-4 hover:bg-blue-500 focus:outline-none focus:bg-indigo-300">
+                            <svg class="h-5 w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                        </button>
+                    </div>
+                    <div class="px-5 py-3 bg-gray-100">
+                        <h3 class="text-gray-700 uppercase">Azurite & Malachite</h3>
+                        <span class="text-gray-500 mt-2">$40 / each</span>
+                    </div>
+                </div>
+                <div class="w-full max-w-lg mx-auto rounded-md shadow-md overflow-hidden">
+                    <div class="flex items-end justify-end h-56 w-full bg-cover" style="background-image: url('https://images.unsplash.com/photo-1584714553326-c949d3f49d77?ixlib=rb-1.2.1&auto=format&fit=crop&w=785&q=80')">
+                        <button class="p-2 rounded-full bg-indigo-600 text-white mx-5 -mb-4 hover:bg-blue-500 focus:outline-none focus:bg-indigo-300">
+                            <svg class="h-5 w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path></svg>
+                        </button>
+                    </div>
+                    <div class="px-5 py-3 bg-gray-100">
+                        <h3 class="text-gray-700 uppercase">Epidote</h3>
+                        <span class="text-gray-500 mt-2">$45 / each</span>
+                    </div>
+                </div>
+                <div class="w-full max-w-lg mx-auto rounded-md shadow-md overflow-hidden">
+                    <div class="flex items-end justify-end h-56 w-full bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1584715429063-0cf7cc5c154d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1134&q=80')">
+                        <button class="p-2 rounded-full bg-indigo-600 text-white mx-5 -mb-4 hover:bg-blue-500 focus:outline-none focus:bg-indigo-300">
+                            <svg class="h-5 w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path></svg>
+                        </button>
+                    </div>
+                    <div class="px-5 py-3 bg-gray-100">
+                        <h3 class="text-gray-700 uppercase">Apophyllite & Prehnite</h3>
+                        <span class="text-gray-500 mt-2">$55 / each</span>
+                    </div>
+                </div>
+                <div class="w-full max-w-lg mx-auto rounded-md shadow-md overflow-hidden">
+                    <div class="flex items-end justify-end h-56 w-full bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1584714553156-4bd681eaea09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=798&q=80')">
+                        <button class="p-2 rounded-full bg-indigo-600 text-white mx-5 -mb-4 hover:bg-blue-500 focus:outline-none focus:bg-indigo-300">
+                            <svg class="h-5 w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path></svg>
+                        </button>
+                    </div>
+                    <div class="px-5 py-3 bg-gray-100">
+                        <h3 class="text-gray-700 uppercase">Augelite & Quartz</h3>
+                        <span class="text-gray-500 mt-2">$80 / each</span>
+                    </div>
+                </div>
+                <div class="w-full max-w-lg mx-auto rounded-md shadow-md overflow-hidden">
+                    <div class="flex items-end justify-end h-56 w-full bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1555158337-3afd64efb2d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80')">
+                        <button class="p-2 rounded-full bg-indigo-600 text-white mx-5 -mb-4 hover:bg-blue-500 focus:outline-none focus:bg-indigo-300">
+                            <svg class="h-5 w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path></svg>
+                        </button>
+                    </div>
+                    <div class="px-5 py-3 bg-gray-100">
+                        <h3 class="text-gray-700 uppercase">Pyrite Chunk</h3>
+                        <span class="text-gray-500 mt-2">$15 / each</span>
+                    </div>
+                </div>
+                <div class="w-full max-w-lg mx-auto rounded-md shadow-md overflow-hidden">
+                    <div class="flex items-end justify-end h-56 w-full bg-cover" style="background-image: url('https://images.unsplash.com/photo-1584714553016-ab06df492eba?ixlib=rb-1.2.1&auto=format&fit=crop&w=828&q=80')">
+                        <button class="p-2 rounded-full bg-indigo-600 text-white mx-5 -mb-4 hover:bg-blue-500 focus:outline-none focus:bg-indigo-300">
+                            <svg class="h-5 w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path></svg>
+                        </button>
+                    </div>
+                    <div class="px-5 py-3 bg-gray-100">
+                        <h3 class="text-gray-700 uppercase">Elbaite Tourmaline</h3>
+                        <span class="text-gray-500 mt-2">$125 / each</span>
+                    </div>
+                </div>
+                <div class="w-full max-w-lg mx-auto rounded-md shadow-md overflow-hidden">
+                    <div class="flex items-end justify-end h-56 w-full bg-cover" style="background-image: url('https://images.unsplash.com/photo-1584714552935-e93f485608e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=880&q=80')">
+                        <button class="p-2 rounded-full bg-indigo-600 text-white mx-5 -mb-4 hover:bg-blue-500 focus:outline-none focus:bg-indigo-300">
+                            <svg class="h-5 w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path></svg>
+                        </button>
+                    </div>
+                    <div class="px-5 py-3 bg-gray-100">
+                        <h3 class="text-gray-700 uppercase">Axinite</h3>
+                        <span class="text-gray-500 mt-2">$28 / each</span>
+                    </div>
+                </div>
+                <div class="w-full max-w-lg mx-auto rounded-md shadow-md overflow-hidden">
+                    <div class="flex items-end justify-end h-56 w-full bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1553775116-4cb1f4f57ed7?ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80')">
+                        <button class="p-2 rounded-full bg-indigo-600 text-white mx-5 -mb-4 hover:bg-blue-500 focus:outline-none focus:bg-indigo-300">
+                            <svg class="h-5 w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path></svg>
+                        </button>
+                    </div>
+                    <div class="px-5 py-3 bg-gray-100">
+                        <h3 class="text-gray-700 uppercase">Quartz Geode</h3>
+                        <span class="text-gray-500 mt-2">$15 / each</span>
+                    </div>
+                </div>
+                <div class="w-full max-w-lg mx-auto rounded-md shadow-md overflow-hidden">
+                    <div class="flex items-end justify-end h-56 w-full bg-cover" style="background-image: url('https://images.unsplash.com/photo-1584715429053-08c4d3fd2e9b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=626&q=80')">
+                        <button class="p-2 rounded-full bg-indigo-600 text-white mx-5 -mb-4 hover:bg-blue-500 focus:outline-none focus:bg-indigo-300">
+                            <svg class="h-5 w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path></svg>
+                        </button>
+                    </div>
+                    <div class="px-5 py-3 bg-gray-100">
+                        <h3 class="text-gray-700 uppercase">Cerussite</h3>
+                        <span class="text-gray-500 mt-2">$99 / each</span>
+                    </div>
+                </div>
+                <div class="w-full max-w-lg mx-auto rounded-md shadow-md overflow-hidden">
+                    <div class="flex items-end justify-end h-56 w-full bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1597336465111-a392afd218bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80')">
+                        <button class="p-2 rounded-full bg-indigo-600 text-white mx-5 -mb-4 hover:bg-blue-500 focus:outline-none focus:bg-indigo-300">
+                            <svg class="h-5 w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path></svg>
+                        </button>
+                    </div>
+                    <div class="px-5 py-3 bg-gray-100">
+                        <h3 class="text-gray-700 uppercase">Selenite & Sage</h3>
+                        <span class="text-gray-500 mt-2">$40 / each</span>
+                    </div>
+                </div>
+                <div class="w-full max-w-lg mx-auto rounded-md shadow-md overflow-hidden">
+                    <div class="flex items-end justify-end h-56 w-full bg-cover bg-bottom" style="background-image: url('https://images.unsplash.com/photo-1550008048-79f06a04a08b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80')">
+                        <button class="p-2 rounded-full bg-indigo-600 text-white mx-5 -mb-4 hover:bg-blue-500 focus:outline-none focus:bg-indigo-300">
+                            <svg class="h-5 w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path></svg>
+                        </button>
+                    </div>
+                    <div class="px-5 py-3 bg-gray-100">
+                        <h3 class="text-gray-700 uppercase">Chalcopyrite Peacock Ore</h3>
+                        <span class="text-gray-500 mt-2">$7 / each</span>
+                    </div>
+                </div>
+                <div class="w-full max-w-lg mx-auto rounded-md shadow-md overflow-hidden">
+                    <div class="flex items-end justify-end h-56 w-full bg-cover bg-left" style="background-image: url('https://images.unsplash.com/photo-1534883031555-7d18c6cf52e7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1056&q=80')">
+                        <button class="p-2 rounded-full bg-indigo-600 text-white mx-5 -mb-4 hover:bg-blue-500 focus:outline-none focus:bg-indigo-300">
+                            <svg class="h-5 w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path></svg>
+                        </button>
+                    </div>
+                    <div class="px-5 py-3 bg-gray-100">
+                        <h3 class="text-gray-700 uppercase">Labradorite Palm Stone</h3>
+                        <span class="text-gray-500 mt-2">$18 / each</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <div class="flex rounded-md mt-8">
+                    <a href="#" class="py-2 px-4 leading-tight bg-white border border-gray-200 text-blue-700 border-r-0 ml-0 rounded-l hover:bg-blue-500 hover:text-white"><span>Previous</a></a>
+                    <a href="#" class="py-2 px-4 leading-tight bg-white border border-gray-200 text-blue-700 border-r-0 hover:bg-blue-500 hover:text-white"><span>1</span></a>
+                    <a href="#" class="py-2 px-4 leading-tight bg-white border border-gray-200 text-blue-700 border-r-0 hover:bg-blue-500 hover:text-white"><span>2</span></a>
+                    <a href="#" class="py-2 px-4 leading-tight bg-white border border-gray-200 text-blue-700 border-r-0 hover:bg-blue-500 hover:text-white"><span>3</span></a>
+                    <a href="#" class="py-2 px-4 leading-tight bg-white border border-gray-200 text-blue-700 rounded-r hover:bg-blue-500 hover:text-white"><span>Next</span></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-gray-700 body-font">
+      <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+          <img src="img/icon.png">
+          <span class="ml-2 text-xl">CrystalNotebook</span>
+        </a>
+        <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2020 CrystalNotebook.com All Rights Reserved.
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+          <a class="text-gray-500">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </footer>
+
+
+
+
+  <!--Modal-->
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-75"></div>
+    
+    <div class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+      
+      <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+          <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+      </div>
+
+      <!-- Add margin if you want to see some of the overlay behind the modal-->
+      <div class="modal-content py-4 text-left px-6">
+        <!--Title-->
+        <div class="flex justify-between items-center pb-3">
+          <p class="text-2xl font-bold">Simple Modal!</p>
+          <div class="modal-close cursor-pointer z-50">
+            <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+              <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+            </svg>
+          </div>
+        </div>
+
+        <!--Body-->
+        <p>Modal content can go here</p>
+        <p>...</p>
+        <p>...</p>
+        <p>...</p>
+        <p>...</p>
+
+        <!--Footer-->
+        <div class="flex justify-end pt-2">
+          <button class="px-4 bg-transparent p-3 rounded-lg text-indigo-500 hover:bg-gray-100 hover:text-indigo-400 mr-2">Action</button>
+          <button class="modal-close px-4 bg-indigo-500 p-3 rounded-lg text-white hover:bg-indigo-400">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var openmodal = document.querySelectorAll('.modal-open')
+    for (var i = 0; i < openmodal.length; i++) {
+      openmodal[i].addEventListener('click', function(event){
+    	event.preventDefault()
+    	toggleModal()
+      })
+    }
+    
+    const overlay = document.querySelector('.modal-overlay')
+    overlay.addEventListener('click', toggleModal)
+    
+    var closemodal = document.querySelectorAll('.modal-close')
+    for (var i = 0; i < closemodal.length; i++) {
+      closemodal[i].addEventListener('click', toggleModal)
+    }
+    
+    document.onkeydown = function(evt) {
+      evt = evt || window.event
+      var isEscape = false
+      if ("key" in evt) {
+    	isEscape = (evt.key === "Escape" || evt.key === "Esc")
+      } else {
+    	isEscape = (evt.keyCode === 27)
+      }
+      if (isEscape && document.body.classList.contains('modal-active')) {
+    	toggleModal()
+      }
+    };
+    
+    
+    function toggleModal () {
+      const body = document.querySelector('body')
+      const modal = document.querySelector('.modal')
+      modal.classList.toggle('opacity-0')
+      modal.classList.toggle('pointer-events-none')
+      body.classList.toggle('modal-active')
+    }
+    
+     
+  </script>
+</body>
+</html>

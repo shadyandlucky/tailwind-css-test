@@ -1,0 +1,19 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "autoprefixer": "^9.8.6",
+    "npm-watch": "^0.7.0",
+    "postcss-cli": "^7.1.2",
+    "tailwindcss": "^1.7.6"
+  },
+  "scripts": {
+    "build": "tailwind build src/style.css -o dist/style.css",
+    "watch": "tailwind build src/style.css -o dist/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
